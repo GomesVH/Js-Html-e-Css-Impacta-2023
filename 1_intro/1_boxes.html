@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Show dos Stones</title>
+        
+    </head>
+    <body>
+        <p>Olá eu sou o paragrafo HTML</p>
+        <h1>exemplo de h1</h1>
+
+
+        <script type="text/javascript" language="javascript">
+            /*
+                variavel : espaço na memoria onde guardo informações durante a execução do programa, e essas informações podem ser alteradas
+
+                linguagens compiladas: variaveis precisam ser declaradas e é a 1a tarefa a ser executada
+                Dizer qual é o tipo de dado e qual é o tamanho da variavel
+
+                linguagens de script: não declara variavel - porem isso é uma BOA PRÁTICA
+                variaveis serão iniciadas.
+                será lida por um interpretador externo
+                o tipo de dado fica relacionado ao conteudo - o  dado em si - e não à variavel
+
+                Tipos de Dados:
+                    Strings => Conjuntos de caracteres - delimitados por aspas - alfanumericos
+                                '98' 'edu' 'aula15'
+                    Number:     float - ponto flutuante - casa decimal - 123654.63
+                                integer - numero inteiro
+                    Boolean: true false
+                    
+                Compostas:
+                    Arrays
+                    Objetos    
+
+
+                Atribuição de variavel
+                let num = 5    variavel num recebe o valor 5 ou o valor 5 é atribuido à variavel num     
+            */
+            let num, res, operando;
+            //var num, res, operando;
+
+            //entrada processamento saida
+
+            //LEIA - entrada de dados
+            num = Number(prompt("entre com o 1o numero"))
+            operando = prompt("entre com o operando")
+
+            //processamento de dados
+            res = num * Number(operando);
+
+            //ESCREVA - saida de dados
+           alert("A multiplicação de "+num+" por "+operando+" é: "+res);
+           console.log("A multiplicação de "+num+" por "+operando+" é: "+res);
+            document.write("<h1>A multiplicação de "+num+" por "+operando+" é: "+res+"</h1>")
+           
+        </script>
+    </body>
+</html>

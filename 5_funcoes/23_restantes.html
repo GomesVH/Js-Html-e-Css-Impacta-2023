@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //operador rest
+        document.write(Math.max(2,5,8,3,1,30,65,98,4,17))
+        document.write("<hr>");
+        ////////////////////////////////////////////////////////
+        function pessoa(nome,sobrenome, ...quefaz){
+            document.write(nome+ ' '+sobrenome+"<br>");
+            document.write(quefaz+"<br>")
+            document.write(quefaz.length+"<br>")
+            document.write(quefaz[1]+"<br>")
+            //arguments - array com todos os argumentos/valores passados para os parametros
+            document.write(arguments+"<br>")
+            document.write(arguments.length+"<br>")
+            document.write(arguments[0]+"<br>")
+        }
+
+        pessoa('Edu','Pretel','Professor','Astrologo','Fotografo','Guitarrista','Radialista');
+    </script>
+</body>
+</html>

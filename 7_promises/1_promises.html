@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function blabla(resolve, reject) {
+            //setTimeout(()=>{},3000)
+            setTimeout(() => {
+                resolve('A promise 1 deu certo!!!')
+            }, 3000)
+        }
+
+        let Promise1 = new Promise(blabla);
+        Promise1.then(function (resultado) {
+            console.log(resultado);
+        })
+
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        let Promise2 = new Promise(function (resolve, reject) {
+            //codigo executor da "promessa"
+            setTimeout(() => {
+                resolve('A promise 2 deu certo!!!')
+            }, 1500)
+        });
+        Promise2.then(function (resultado) {
+            console.log(resultado);
+        })
+
+    </script>
+</body>
+
+</html>

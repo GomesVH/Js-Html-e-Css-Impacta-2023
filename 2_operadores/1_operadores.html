@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        ///////////////////////////////////////////////////////////
+        //operadores de atribuição
+        let num = 51;//num recebe 51 ou 51 é atribuido a num 
+        window.console.log(num);
+        num = 652;
+        console.log(num);//652
+
+        //acumular valores numa variavel
+        num = num + 8;
+        console.log(num);//660
+        //forma reduzida
+        num+=10;//num = num + 10
+        console.log(num);//670
+        //incremento e decremento - alterar o valos da variavel de 1 em 1 - somente adição e subtração
+        num++;//num = num + 1
+        console.log(num);//671
+        ++num;
+        console.log(num);//672
+        num--;//num = num - 1
+        console.log(num);//671
+        --num;
+        console.log(num);//670
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+        //operadores aritmeticos
+        /*
+             +    adição
+             -    subtração
+             *    multiplicação
+             /    divisão
+             %    resto divisão
+             **   potencia
+             ==   comparação - dois numeros ou dois valores são iguais */
+
+       console.log(5 + 3);// 8  <- adição
+       console.log(5 - 3);// 2  <- subtração
+       console.log(5 * 3);// 15  <- multiplicação 
+       console.log(5 / 3);//1.6666666666666 ->   antigamente retornaria apenas <- divisão
+       console.log(5 % 3);//2     <- resto divisão
+       console.log(5 ** 3);//125  <- exponenciação 
+       console.log( Math.pow(5,4) );//**  <- 
+       console.log( Math.sqrt(16) );//raiz quadrada 
+       console.log( 16 ** (1/2) );//raiz quadrada de 16
+       console.log( 8 ** (1/3) );//precedencia de operadores
+       console.log( 2 + 5 * 3 - 6 );
+
+       //////////////////////////////////////////////////////////////////////////////
+       //operador literal - concatenação
+       console.log(5 + 3);//8
+       console.log('5' + '3');//53
+       console.log('5' + 3);//53
+       console.log(3 + '5');//35
+
+       //Type casting - Conversão de tipos       
+       console.log(Number('5')+ 3);//8
+       console.log(parseInt('5') + 3);//8
+       console.log(parseInt('5.7') );//5 - pegar a parte inteira do numero e retornar 
+       
+       console.log(Number('5.1')+ 0.3 );
+       console.log(('5.1')+ 0.3 );//5.10.3
+       console.log(parseFloat('5.1')+ 0.3 );//5.10.3
+       console.log(parseFloat('5.1')+ 0.3 );//4 - 35
+
+       console.log(String(3) + '5' );//53
+
+       console.log( "Victor " + "Gomes" );//
+
+       ////////////////////////////////////////////////////////////////////////////
+       //operador de comparação    BOOLEANO
+       //comparar 2 valores e RETORNAR TRUE ou FALSE
+       console.log("igualdade")
+       //  == -> igualdade - verifica somente o VALOR e não o tipo
+       // === -> identicidade - verifica o VALOR e o TIPO
+       console.log(5 == '5')//true
+       console.log(5 === '5')//false
+
+       //sensetive case
+       console.log('Victor' == 'victor')//false
+       console.log('Victor' == 'Victor')//true
+
+       console.log("desigualdade")
+       //o operador de negação no JavaScript é o !
+       //<> - não existe
+       //!= - não igual e portanto: diferente 
+       //!== - não identico
+       
+       console.log(5 != '5')//false
+       console.log(5 !== '5')//true 
+
+       console.log("maior ou menor")
+       /*
+       >  - maior que
+       <  - menor que
+       >= - maior ou igual -------- não existe =>
+       <= - menor ou igual ---------- não existe =<  
+       */
+
+       num = 4;
+       console.log(num > 4)//false
+       console.log(num >= 4)//true
+       console.log(num < 4)//false
+       console.log(num <= 4)//true
+
+                     "string"
+       console.log('eduPretel' < 'maria')//true
+       console.log('bb' < 'baa')//true
+       //ordem alfabetica - alfanumerica
+       console.log('11' < '100')//false
+       console.log(11 < 100)//true
+
+       //////////////////////////////////////////////////////////////////////
+       //operadores lógicos
+       //realizar mais de uma comparação e ter apenas uma resposta 
+       console.log("operador lógico AND")
+       //and - && - => para um conjunto retornar verdadeiro TODAS as afirmações tem que ser verdadeiras
+       console.log(20 < 20 && 5=='5' && 5===5)//(false && true && true) -> false
+       console.log(20 <= 20 && 5=='5' && 5===5)//(true && true && true) -> true
+
+       //or - || - => para um conjunto retornar verdadeiro BASTA QUE UMA APENAS seja verdadeira
+       //portanto, para retornar false TODAS as afirmações tem que ser falsas
+       console.log(20 < 20 || 5==='5' || 5===5)
+       //(false || false || true) -> true
+
+       //xor - ^ - => para o conjunto todo retornar true, SOMENTE UMA afirmação pode ser TRUE
+       //x - Xclusive (exclusive) "ou  exclusivo" - "ou unico"
+       //se mais de uma afirmação for verdadeira, ele retornara false
+       console.log(20 < 20 ^ 5==='5' ^ 5===5)
+       //(false ^ false ^ true) -> true
+       console.log(20 <= 20 ^ 5==='5' ^ 5===5)
+       //(true ^ false ^ true) -> false
+       console.log(20 < 20 ^ 5==='5' ^ 5!==5)
+       //(false ^ false ^ false) -> false
+
+       /*
+          P1  P2 AND  OR XOR
+          V   V   V   V   F
+          V   F   F   V   V
+          F   V   F   V   V
+          F   F   F   F   F
+          */
+
+       /*
+       operador ternário
+       retornará algo diferente de true ou false
+       */
+      console.log('operador ternario')
+      console.log( (5===5) ? ("isto é verdadeiro") : ("isto é falso") );
+      console.log( 5 === '5' ? ("isto é verdadeiro") : ("isto é falso") );
+
+
+     </script>
+</body>
+</html>

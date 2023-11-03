@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       "use strict";
+       let idade = prompt("Sua idade é esta indicada abaixo???",18);
+
+       //condicional que faz a declaração de função
+       if(idade < 18){
+            boasVindas()
+            function boasVindas(){
+                alert('Olá, você é menor de idade: '+idade);
+            }
+       }else{
+            function boasVindas(){
+                alert('Olá, você é maior de idade: '+idade);
+            }
+            boasVindas()
+       }
+
+       //boasVindas()//boasVindas is not defined
+       //declaraçao de funão tem escopo de bloco
+       //somente será acessada dentro daquele bloco
+       //resolvendo nos arquivos 20 e 21
+    </script>
+</body>
+</html>

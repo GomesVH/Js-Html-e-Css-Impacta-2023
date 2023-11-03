@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        let cont;
+        //estruturas de controle de repetição condicionais
+        //while   -  do while
+
+        //while - enquanto uma condição verdadeira faça
+        //nao sei quantas vezes o laço vai girar
+
+        cont=1;
+        while(cont <= 3){
+            document.write(`${cont},`);
+            cont++
+        }
+        document.write("<hr>");
+        //////////////////////////////////////////////////////////////
+        // do... while - faça .....enquanto - repita até - faça e repita até
+        // pelo menos uma vez a instrução será executada
+        // nao sei quantas vezes o laço vai girar
+        cont=10;
+        do{
+            document.write(`${cont},`);
+            cont++
+        }while(cont <= 3);
+        document.write("<hr>");
+
+        /////////////////////////////////////////////////////////////////////
+        //for - para
+        //para cont de 1 ate 3passo 1 faça
+        //sei quantas vezes o laço vai girar
+
+        for(cont=1;cont <=3;cont++){
+            document.write(`${cont},`);
+        }
+        document.write("<hr>");
+    </script>
+</body>
+</html>

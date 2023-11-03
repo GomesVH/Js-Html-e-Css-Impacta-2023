@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //class mae ou super class - normalmente não é instanciada
+       //serve de base para outras classes
+       //informaçoes genericas - sao necessarias mas nao sao suficientes para caracterizar uma conta 
+       //classes abstratas nao podem ser instanciadas, somente herdadas
+        class Conta{
+            //propriedades
+            saldo = 1000
+
+            constructor(a,b,c){
+                this.titular=a;
+                this.cc=b;
+                this.agencia=c;
+            }
+
+            primeira(num1,num2){
+                return num1+num2;
+            }
+        } 
+        class ContaConjunta extends Conta{
+            titular2 = "maridão"
+        }
+
+        let tamara = new ContaConjunta('Tamara','236-8','2167');
+        console.log(tamara);
+
+        class contaPoupanca extends Conta{
+            aniversario='05'
+        }
+        let lourenzo = new contaPoupanca('Lourenzo','6589-7','0440');
+        console.log(lourenzo);
+
+        alert(tamara.primeira(9,5));
+        console.log(lourenzo.primeira(10,85));
+
+    </script>
+</body>
+</html>

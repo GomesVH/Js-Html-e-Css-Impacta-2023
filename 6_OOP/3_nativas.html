@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Classes nativas do JS que não precisam instanciadas 
+        //Strings
+        //let nome = "Edu Pretel"
+        let nome = new String ("Edu Pretel")
+        document.write(nome.length + "<br>")
+        document.write(nome.substring(0,3)+ "<br>")
+        document.write(nome.toUpperCase() + "<br>")
+
+        document.write("<hr>");
+        //let cores = ['verde','azul','amarelo','roxo']
+        let cores = new Array('verde','azul','amarelo','roxo')
+        document.write(cores.length + "<br>")
+        document.write(cores.sort() + "<br>")
+
+       document.write("<hr>")
+       //Classes nativas que precisam ser instanciadas 
+       let hoje = new Date;//let hoje = new Date();
+       let edu = new Date ('1960-08-18')
+       document.write(hoje + "<br>")
+       document.write(edu + "<br>")
+       document.write(edu.getFullYear + "<br>")
+
+       document.write("<hr>");
+       ////////////////////////////////////////////
+       //Class que NÃO PODE SEREM INSTANCIADAS
+       //Class static
+       /*
+       isso não existe
+       let valor = new Math(123.45)
+       document.write(valor.round())
+       */
+       document.write(Math.round(123.45) + "<br>")
+       document.write(Math.max(2,3,5,9,8,45,1,6,7)+ "<br>")
+    </script>
+</body>
+</html>

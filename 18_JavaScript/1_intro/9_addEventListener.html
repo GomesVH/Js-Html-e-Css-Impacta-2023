@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formata{
+            color:brown;
+            font-size: 20px;
+            font-family: Arial;
+        }
+    </style>
+    <script>
+            function calculaIdade(){
+                    let ano,idade;
+                    ano = window.prompt("Entre com o ano de seu nascimento");
+                    idade = 2023 - ano;
+                    window.alert(idade+" anos");
+                    window.console.log(idade+" anos");
+                    //window.document.write(idade+" anos");
+            }
+            
+    </script>
+</head>
+<body>
+    <input type="button" id="um" value="Clique" >
+    <hr>
+    <input type="button" id="dois" value="Duplo Clique" >
+    <hr>
+    <input type="button" id="tres" value="Rato em Cima" >
+    <hr>
+    <script>
+        //alert(calculaIdade);
+        //window.document.getElementById('um').onclick = calculaIdade;
+        //window.document.getElementById('um').addEventeListener();
+        //window.document.getElementById('um').addEventeListener(evento,funçãodeCallBack);
+        window.document.getElementById('um').addEventeListener(click,calculaIdade);
+
+
+        //document.getElementById('dois').ondblclick = function(){}
+        //document.getElementById('dois').addEventeListener('dblclick',function(){})
+        document.getElementById('dois').ondblclick = function(){
+            calculaIdade();
+        }
+
+        //document.getElementById('tres').addEventListener('mouseover', function(){}) 
+        //document.getElementById('tres').addEventListener('mouseover', function()=>{}) 
+        //document.getElementById('tres').onmouseover = function(){}
+        document.getElementById('tres').addEventListener('mouseover',()=>{
+                    let ano,idade;
+                    ano = window.prompt("Entre com o ano de seu nascimento");
+                    idade = 2023 - ano;
+                    window.alert(idade+" anos");
+        })
+    </script>
+</body>
+</html>

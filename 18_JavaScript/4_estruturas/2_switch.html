@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+      dia = new Date(" 1960-09-18 16:45:00 ");
+      //alert(dia.getDay())
+
+      switch(dia.getDay()){
+        case 0:
+            diaSemana="Domingo"
+            break;
+        case 1:
+            diaSemana="Segunda-Feira"
+            break;
+        case 2:
+            diaSemana="Terça-Feira "
+            break;
+        case 3:
+            diaSemana="Quarta-Feira "
+            break;
+        case 4:
+            diaSemana="Quinta-Feira "
+            break;
+        case 5:
+            diaSemana="Sexta-Feira "
+            break;
+        case 6:
+            diaSemana="Sabado"
+            break;
+        default:
+            diaSemana="Valor Invalido"
+      }
+      document.write(diaSemana + "<hr>")
+
+
+      //////////////////////////////////////////////////////////////////////////////////
+      document.write("<hr>")
+      Date.prototype.cumprimento="Hola, que tal!!!! ";
+      Date.prototype.getDiaSemana= function(){
+        let dia = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sabado'];
+        return dia[this.getDay()]
+
+      }
+      document.write(dia.cumprimento + "<br>");
+      document.write(dia.getDiaSemana() + "<br>");
+
+
+
+    </script>
+</body>
+</html>

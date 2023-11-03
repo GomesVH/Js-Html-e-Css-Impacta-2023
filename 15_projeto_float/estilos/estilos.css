@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+}
+nav li{
+    list-style-type:none ;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+body{
+    background-color:#ccc;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1rem;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+div#interface{
+    border:1px solid black;
+    width:768px;
+    margin:auto;
+    background-color:burlywood;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+header#header{
+    height:80px;
+    background-image:url('../images/topo_.jpg');
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+nav#menu{
+    width:150px;
+    height:400px;
+    background-color:rgb(0, 0, 0);
+    float: left;
+}
+nav#menu ul li a{
+    margin:1px;
+    padding:5px;
+    border-left:3px solid rgb(255, 0, 0);
+    border-bottom:1px solid #ccc;
+    display: block;
+    
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    font-size:0.6rem;
+}
+nav#menu ul li a:hover{
+    border-left-color:#fff;
+    background-color: #cccccc;
+
+    color:black;
+    text-decoration:underline;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+section#principal{
+    width: 618px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+section#principal aside{
+    width: 180px;
+    background-color: #ccc;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+section#principal aside a{
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff #333 #333 #333;
+    display: block;
+
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+section#principal aside a:hover{
+    text-decoration: underline;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+footer{
+    height: 50px;
+    background-color: #600;
+    padding: 9px;
+    clear: both;
+
+    color: rgb(255, 255, 255);
+    font-size: .6rem;
+    text-align: center;
+
+    /*line-height:50px;*/
+
+    display: table-cell;/*display: inline-block se adequa ao conteudo, porem
+    aceita width e height
+    vertical-align: middle;*/
+    width: 768px;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/

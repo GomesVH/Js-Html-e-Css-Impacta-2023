@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formata{
+            color:brown;
+            font-size: 20px;
+            font-family: Arial;
+        }
+    </style>
+    <script>
+            function calculaIdade(){
+                    let ano,idade;
+                    ano = window.prompt("Entre com o ano de seu nascimento");
+                    idade = 2023 - ano;
+                    window.alert(idade+" anos");
+                    window.console.log(idade+" anos");
+                    //window.document.write(idade+" anos");
+            }
+    </script>
+</head>
+<body>
+    <input type="button" id="um" value="Clique" onclick="calculaIdade()">
+    <hr>
+    <input type="button" id="dois" value="Duplo Clique" ondblclick="script:calculaIdade()">
+    <hr>
+    <input type="button" id="tres" value="Rato em Cima" onmouseover="javascript:calculaIdade()">
+    <hr>
+
+</body>
+</html>

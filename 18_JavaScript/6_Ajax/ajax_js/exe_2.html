@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" language="javascript">
+window.onload = ()=>{
+	document.getElementById('botao').addEventListener('click', ()=>{
+		        
+		        let resposta = document.getElementById=('resposta');//pegar div resposta
+
+				let ajax = new XMLHttpRequest;//rs - 0 - comunicação nao iniciada
+				
+				ajax.onreadystatechange = ()=>{
+						
+						if(ajax.readyState === 4){
+							alert(ajax.status);//200- 404
+							alert(ajax.statusText);//ok - not found
+							alert(ajax.responseText);//conteudo do arquivo solicitado, se ok/200
+							resposta.innerHTML = ajax.responseText;
+						}	
+				}			
+				
+
+				ajax.open("GET","arquivo.html",true);//readystate = 1 - inicio da comunicação
+
+				ajax.send();//readystate - 2
+
+	}) 
+}
+</script>
+</head>
+
+<body>
+<div>
+  <input type="button" name="botao" id="botao" value="Button">
+</div>
+<div id="resposta"></div>
+</body>
+</html>

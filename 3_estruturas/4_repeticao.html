@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cont
+        //////////////////////////////////////////////////////////////
+        //enquanto....faça - repetição condicional
+        //cont neste caso é contadora/acumuladora e controladora ao mesmo tempo
+        //deve ser atribuido imediatamente antes da verificação
+        cont = 10; 
+        while(cont <= 3){
+            document.write(`Boa Noite!! Eu sou o giro de nº ${cont}!!!!!<br>`);
+            cont++;//cont = cont + 1
+        }
+        document.write("<hr>");
+        /////////////////////////////////////////////////////////////////
+        //(faça) repita...ate  ----- do...while - faça enquanto
+        //a verificação da condição é feita no final de estrutura
+        //ao menos uma vez executa o bloco de instruções
+        cont = 10; 
+        do{
+            document.write(`Boa Noite!! Eu sou o giro de nº ${cont}!!!!!<br>`);
+            cont++;//cont = cont + 1
+        }while(cont <= 3);
+        document.write("<hr>");
+        ///////////////////////////////////////////////////////////////////////////
+        //ESTRUTURA DE CONTROLE DE REPETIÇÃO NAO CONDICIONAL
+        ///////////////////////////////////////////////////////////////////////////
+        //PARA
+        //PARA CONT DE 1 ATE 3 PASSO 1 FAÇA
+         
+        for(cont = 1;cont <= 3; cont++){
+            document.write(`Boa Noite!! Eu sou o giro de nº ${cont}!!!!!<br>`);
+        }
+        document.write("<hr>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //pedir ao usuario entrar com 1 numero entre 1 e 10
+        //se nao for entre 1 e 10, solicitar novamente que ele entre com um numero entre 1 e 10
+        let num;
+        do{
+            num = prompt('Entre com um numero entre 1 e 10')
+        }while( !(num >= 1 && num <= 10) )
+           
+        
+        
+                    
+        //calcular o fatorial do numero que o usuario entrou
+        // 5! = 5*4*3*2*1
+        // 7! = 7*6*5*4*3*2*1      =   1*2*3*4*5*6*7 
+        fatorial = 1;
+        for(i=1;i<=num;i++){
+             fatorial = fatorial * i;
+        }
+        document.write(`O fatorial de ${num} é ${fatorial}`)
+    </script>
+</body>
+</html>

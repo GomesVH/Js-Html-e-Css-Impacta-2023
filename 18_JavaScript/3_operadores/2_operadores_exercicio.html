@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+<input type="text" id="resultado" value="0">
+<br>
+<input type="button" id="incrementa" value="++"> 
+<input type="button" id="decrementa" value="--">   
+<hr>
+
+Num 1: <input type="text" id="num1">
+<br>
+Num 2: <input type="text" id="num2">
+<br>
+<input type="button" id="soma" value="+"> 
+<input type="button" id="subtrai" value="-">
+<input type="button" id="multiplica" value="*"> 
+<input type="button" id="divide" value="/">
+<p>O Resultado é:</p>
+
+<script>
+
+let resultado = document.getElementById('resultado');   
+
+document.getElementById('incrementa').addEventListener('click',()=>{
+    resultado.value++;
+})      
+
+document.getElementById('decrementa').addEventListener('click',()=>{
+    resultado = document.getElementById('resultado');
+    resultado.value--;
+}) 
+
+////////////////////////////////////////////////////////////////////////////
+let num1 = document.getElementById('num1');
+let num2 = document.getElementById('num2');
+let resposta = document.getElementsByTagName('p')[0];
+
+document.getElementById('soma').addEventListener('click',()=>{
+    let resp = parseFloat(num1.value) + parseFloat(num2.value);
+    resposta.innerHTML = "O resultado é: " +resp;
+})
+
+document.getElementById('subtrai').addEventListener('click',()=>{
+    let resp = parseFloat(num1.value) - parseFloat(num2.value);
+    resposta.innerHTML = "O resultado é: " +resp;
+})
+
+document.getElementById('multiplica').addEventListener('click',()=>{
+    let resp = parseFloat(num1.value) * parseFloat(num2.value);
+    resposta.innerHTML = "O resultado é: " +resp;
+})
+
+document.getElementById('divide').addEventListener('click',()=>{
+    let resp = parseFloat(num1.value) / parseFloat(num2.value);
+    resposta.innerHTML = "O resultado é: " +resp;
+})
+
+</script>
+</body>
+</html>

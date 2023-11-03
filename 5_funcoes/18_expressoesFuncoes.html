@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //DIFERENÇA ENTRE A DECLARAÇÃO E A EXPRESSÃO
+        //O CALLER A DECLARAÇÃO PODE SER CHAMADO ANTES DE DECLARA A FUNÇÃO
+        
+        //caller
+        dandoUmAlo()
+        //declaração de função
+        function dandoUmAlo(){
+            alert('alô!!!!!!!!!!!!!!');
+        }
+         ///////////////////////////////////////////////////////////
+        document.write("<hr>");
+        //expressao de função
+        //POR ESTAR AO LADO DIREITO DO SINAL DE ATRIBUIÇÃO, ESTA FUNÇÃO SOMENTE SEÁ CARREGADA
+        //QUANDO O PROCESSADOR PASSAR POR ESTA FUNÇÃO
+        //PORTANTO O CALLER SO PODE SER EXECUTADO APOS ISSO
+
+        //dizendoOla()
+        //Uncaught ReferenceError: Cannot access 'dizendoOla' before initialization
+        //functionn expression
+        let dizendoOla = function(){
+            alert('Olaaaaa!!!!!!!!!!!!!!');
+        }
+        dizendoOla()
+        
+        
+
+    </script>
+</body>
+</html>

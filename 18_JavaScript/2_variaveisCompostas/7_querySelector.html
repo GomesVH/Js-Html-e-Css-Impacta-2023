@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="button" id="um" value="Oi" class="formata" style="color:red;font-family: Arial;">
+    <hr>
+    <input type="button" id="dois" value="Ui" class="formata">
+    <hr>
+    <input type="button" id="tres" value="Ai" >
+    <hr>
+    <p class="formata">Paragrafo 1</p>
+    <p>Paragrafo 2</p>
+    <p>Paragrafo 3</p>
+
+    <script>
+         //let caixas = document.getElementsByTagName('input')
+         let caixas = document.querySelectorAll('input');
+         /*
+         let caixas = document.querySelectorAll('input');
+         retornará o primeiro objeto que encontrar com a tag name
+         */
+
+
+         //alert(caixas);//[object HTMLCollection]
+         document.write(caixas);
+         console.log(caixas);
+
+        console.log(caixas[0]);
+        console.log(caixas[0].tagName);
+        console.log(caixas[0].type);
+        console.log(caixas[0].id);
+        console.log(caixas[0].value);
+        console.log(caixas[0].className);
+        console.log(caixas[0].style);
+        //alert(caixas[0].style);
+        console.log(caixas[0].style.color);
+        console.log(caixas[0].style.fontFamily);
+
+    </script>
+</body>
+</html>

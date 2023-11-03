@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //isto será transformado em uma promise no exercicio 5
+        function sucesso(){
+            console.log('Rolou!!!')
+        }
+        function erro(){
+            console.log('Nâo Rolou!!!')
+        }
+
+        function somar(){
+            let num1 = 50;
+            let num2 = 20;
+            let soma = num1+num2;
+            if(soma == 70){
+                sucesso()
+            }else{
+                erro()
+            }
+        }
+        //////////////////////////////////////////////
+        somar();
+    </script>
+</body>
+</html>

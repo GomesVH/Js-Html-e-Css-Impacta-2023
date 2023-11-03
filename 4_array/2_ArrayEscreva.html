@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Criar um objeto literal
+        const planes = ['A380','B747','A350','B787','A320','B737','Concorde','ERJ195','Pilatus'];
+
+        document.write(planes+"<br>");
+        document.write(planes.length+"<br>");//8
+        document.write(planes[3]+"<br>");
+        for(i=0; i<planes.length; i++){
+            document.write(planes[i]+"<br>");
+        }
+
+        document.write("<hr>");
+        /////////////////////////////////////////////////////////////////////////////////////
+        //for...in => a variavel x receberá o indice do elemento do array
+        for(x in planes){
+            document.write(x + ' - '+ planes[x] +"<br>")
+        }
+        document.write("<hr>");
+        /////////////////////////////////////////////////////////////////////////////////////
+        //for..of => a variavel x receberá o conteudo do elemento do array
+        for(x of planes){
+            document.write(x +"<br>")
+        }
+        document.write("<hr>")
+        /////////////////////////////////////////////////////////////////////////////////////
+        ///////
+
+
+    </script>
+</body>
+</html>

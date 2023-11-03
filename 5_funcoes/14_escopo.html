@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ESCOPO DE VARIAVEL
+        //ONDE A VARIAVEL SERÁ VISIVEL/ACESSADA
+        //VISIBILIDADE DA VARIAVEL
+
+        //ESCOPO GLOBAL
+        //VARIAVEL DECLARADA NA RAIZ DO DOCUMENTO
+        //Todos os elementos da página terão acesso à esta variavel
+        //incluindo as funções
+
+        function testarVariavel(num1){
+             //ESCOPO LOCAL
+            //VARIAVEL DECLARADA NA FUNÇÃO
+            //sOMENTE ESSA FUNÇÃO TERÁ acesso à esta variavel
+            //o parametro - num1 - é considerado uma variavel de escopo LOCAL
+                let resposta;
+                var resp;
+                resp="Impacta";// ade escopo local sobrescreve a de escopo global dentro desta função
+                resposta="BBB";
+                musica = "Gimme Sheltter";//nao usei let ou var - ela atribuira valor à VARIAVEL GLOBAL
+                alert(resp + ' - '+resposta+ ' - '+num1+ ' - '+musica);
+        }
+
+        let resposta;
+        var resp;
+        let musica='Heroes';//será alterada pela função, mesmo tendo escopo global
+        resp="Madonna";
+        resposta="Michael";
+        document.write(resp + ' - '+resposta+ ' - '+musica+"<br>");//num is not defined
+        testarVariavel(34);//caller
+        document.write(resp + ' - '+resposta+ ' - '+musica);//num is not defined
+
+    </script>
+</body>
+</html>

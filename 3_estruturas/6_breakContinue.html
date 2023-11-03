@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /////////////////////////////////////////////////////////////
+        //girar até um determinado numero
+        //break
+        //ao encontrar o break o laço seá interrompido
+        
+        let parar = 30;
+        for(i=1;i<=100;i++){
+            document.write(i+", ");
+            if(i == parar){
+                break;
+            }
+        }
+        document.write("<hr>");
+        /////////////////////////////////////////////////
+        //continue
+        //ao ser encontrado o giro do laço será interrompido
+        let pular = 3;
+        for(i=1;i<=100;i++){
+            if(i == pular){
+                continue;
+            }
+            document.write(i+", ");
+        }
+        
+    </script>
+</body>
+</html>

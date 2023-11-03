@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        questão : texto - pergunta
+        Sim: função para executar caso a resposta seja sim
+        Não: funçao para executar caso a resposta seja não
+        */
+
+        //expressao de function, mas poderia ser arrow Function
+        let showOK = function(){
+            alert("OK, Rolou!!! Tamo junto!!!")
+        }
+        //declaracao de função 
+        function showCancel(){
+            alert("Não Rolou!!!")
+        }
+
+        ////////////////////////////////////////////////////////////
+        function perguntar(questao,sim,nao){
+            if(confirm(questao)){
+                sim()
+            }else{
+                nao()
+            }
+        }
+        ///////////////////////////////////////////////////////////
+        //caller 
+        perguntar('Estamos combinados???',showOK,showCancel)
+
+    </script>
+</body>
+</html>

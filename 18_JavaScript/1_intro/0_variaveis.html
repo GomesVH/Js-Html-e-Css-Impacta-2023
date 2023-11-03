@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        espaço na memoria RAM do computador 
+
+        Variaveis nao sao tipadas,  o tipo é do dado
+
+        Simples
+        Strings => alfanumericas
+        Float, Integer => Numericas
+        Boolean => true ou False
+
+        Compostas
+        Arrays
+        Objetos
+        */
+
+        nome="edu";
+        console.log(nome);
+        nome="monica";
+        console.log(nome);
+
+        //declarando a variavel
+        //escopo de variavel - onde ela será visivel - global(todos enxergam)
+        //ou local - somente função acessa
+        //global ou função
+        var curso = "JS";
+        console.log(curso);
+        var curso = "Corte e Costura";
+        console.log(curso);
+
+        //declaraçao de variavel
+        //só posso usar uma vez para cada variavel
+        //escopo de variavel - onde ela será visivel - global(todos enxergam)
+        //ou local - somente função ou a estrutura de controle acessa
+        //global ou (função / estrutura de controle)
+        let idade = 65;
+        console.log(idade);
+        //let idade = 25;//Uncaught SyntaxError: Identifier 'idade' has already been declared
+        idade=25;
+        console.log(idade);
+
+        
+        const escola = "Impacta";
+        console.log(escola);
+        //escola = "Marista"//Assignment to constant variable.
+        //const escola = "Marista"//Uncaught SyntaxError: Identifier 'escola' has already been declared
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+       
+    </script>
+</head>
+<body>
+    <p id="texto">0_Variaveis</p>
+
+    <p id="musica">Gimme Shelter</p>
+
+    <script>
+        let texto = document.getElementById('texto');
+        alert(texto.innerHTML);
+    </script>
+</body>
+</html>

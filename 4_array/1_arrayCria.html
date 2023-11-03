@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conjunto/coleção de informações</title>
+</head>
+<body>
+    <script>
+        //array - conjunto/coleção de informações
+        //logica - vetor
+        let cores=[];
+        cores[0]="Azul";
+        cores[1]="Rosa";
+        cores[2]="amarelo";
+        cores[3]="Verde";
+        cores[4]="laranja";
+
+
+        document.write(cores);
+        console.log(cores);
+        //alert(cores);
+
+        document.write("<br>");
+        document.write(cores[2]);//amarelo
+        document.write("<br>");
+        document.write(cores.length);
+        document.write("<br>");
+        (cores.sort());
+        document.write(cores);
+        console.log(cores);
+        
+        //orientação à objetos - Array é uma classe - Array é um objeto
+        let carros = new Array('Toro','CRV','S10','Amarok','Fusion','Renegade');
+        document.write("<br>");
+        document.write(carros);
+        console.log(carros);
+        carros[2]='Strada';
+        document.write("<br>");
+        document.write(carros);
+        console.log(carros);
+
+        //Array em JS é um objeto
+        //Criando objeto de forma literal
+        //É chamado de objeto literal
+
+        let bairros = ['Campo Belo','Moema','Ibirapuera','Tucuruvi','Itaquera','Tatuapé','Lapa','Butantã']
+        document.write("<br>");
+        document.write(bairros);
+        console.log(bairros);
+        alert(bairros);
+
+        document.write("<br>");
+        document.write(bairros[6]);//Lapa
+        document.write("<br>");
+        document.write(bairros[1]);//Moema
+        document.write("<br>");
+        bairros[4]='Santana';
+        document.write(bairros);
+        document.write("<br>");
+
+        document.write(bairros[1000]);//undefined
+        document.write("<br>");
+        document.write( (bairros[1000])?(bairros[1000]):('Não existe esse indice') );
+
+        document.write("<br>");
+        document.write( (bairros[1])?(bairros[1]):('Não existe esse indice') );
+        
+
+
+
+    </script>
+</body>
+</html>

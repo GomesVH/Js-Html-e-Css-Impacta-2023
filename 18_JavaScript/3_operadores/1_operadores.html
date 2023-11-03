@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        //operadores de atribuição
+        let num = 51;
+        console.log(num);//
+        
+        //acumular
+        num = num + 1;
+        console.log(num);//53
+        num +=1 ;//num = num + 1
+        console.log(num);53
+        
+        //incrementer
+        num++;//54
+        console.log(num);//54
+        ++num;//num = num + 1
+        console.log(num);
+        
+        //decrementar 
+        num--;//num = num - 1
+        console.log(num);//54
+        --num;//num = num - 1
+        console.log(num);//53 
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+        //operadores aritimeticos
+        console.log(5 + 3);//adição
+        console.log(5 - 3);
+        console.log(5 * 3);
+        console.log(5 / 3);
+        console.log(5 % 3);
+        console.log(5 ** 3);
+
+        //operador literal
+        console.log(5 + 3)//8
+        console.log("5" + 3)//53
+        console.log(5 + "3")//53
+        console.log("5" + "3")//53
+
+        console.log(String(5) + String(3))
+        console.log(Number("5") + Number("3"));
+        //parseFloat() parseInt()
+
+        /////////////////////////////////////////////////////////////////////////////////////
+        //operadores de comparação
+        //compara dois valores e retornaram TRUE ou FALSE
+        // == igualdade - verifica somente valor, não verifica o tipo de dado - "5" == 5 - TRUE
+        // === identicos - verifica valor e tipo - "5" === 5 - FALSE
+        //  ! - negação
+        //  !=  não igual ou diferente 
+        //  !== - não identico
+        console.log(5 == "5")//TRUE
+        console.log(5 === "5")//FALSE
+        console.log(5 != "5")//FALSE
+        console.log(5 !== "5")//TRUE
+
+        console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        // > maior; < menor; >= maior OU igual; <= menor OU igual;      "NÂO EXISTE"  => arrow function   =<
+        console.log(5 > 3)//true
+        console.log(5 >= 3)//true
+        console.log(5 >= "5")//true
+
+        console.log(5 < 3)//false
+        console.log(5 <= 3)//false
+        console.log(5 <= "5")//false
+
+        console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        console.log("Operadores Lógicos")
+        //conjunto de comparações e quero apenas um resultado - TRUE OU FALSE
+
+        console.log("AND  &&")
+        //todas as comparações tem que retornar TRUE para que o conjunto retorne TRUE
+        console.log(5 === 5 && "5" == 5);//(true && true) => (true)
+
+        console.log("OR  || ")
+        //Basta uma das comparações retornar TRUE para que o conjunto retorne TRUE
+        console.log(5 === 5 || "5" == 5);//(true && true) => (true)
+
+        console.log("XOR ^ ")//ou unico OU ou exclusivo
+        //Somente uma das comparações tem que retornar TRUE para que o conjunto retorne TRUE
+        // 1 para true e 0 para false
+        console.log(5 == 5 ^ "5" == 5);//(true && true) => (FALSE)
+
+        ////////////////////////////////////////////////////////////////////////////////////
+        console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        console.log("Operadores Ternário")
+        console.log(("5" != 5)?("É nois!!!!!!"):("Danou-se"))//false
+        console.log("5" != 5 ? "É nois!!!!!!" : "Danou-se")//false
+        console.log( "5" != 5 
+                            ? "É nois!!!!!!" 
+                            : "Danou-se"
+                            )
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = "Edu";
+        var nome = "Eduardo";//nao retorna erro
+
+        let nota = 8;
+        //let nota = 10;//Uncaught SyntaxError: Identifier 'nota' has already been declared 
+
+        if(nota >= 7){
+            let nota = 1500;
+            var nome="Pretel";
+            alert("nota dentro do if: "+nota)
+        }
+
+        document.write("nota fora do if: "+nota)
+        console.log(nome);
+
+    </script>
+</body>
+</html>

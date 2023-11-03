@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hoje = new Date;
+        document.write(hoje);
+
+        document.write("<hr>");
+        let edu = new Date('1960-09-18T16:45:00')
+        document.write(edu+"<br>");
+
+        document.write(edu.getFullYear()+"<br>");//1960
+        edu.setFullYear(1980);
+        document.write(edu.getFullYear()+"<br>");//1980
+        document.write(edu.getMonth()+"<br>");//1980
+        
+        document.write(hoje.getFullYear()+"<br>");
+        //////////////////////////////////////////////////////////
+        document.write(hoje.getDay()+"<br>");//1 - seg
+
+        dia = hoje.getDay();//1
+        /*
+        if(dia == 0){
+            document.write("Domingo")
+        }else if(dia == 1){
+            document.write("Segunda-feira")
+        }*/ 
+        switch(dia){
+            case 0:
+                document.write("Domingo")
+                break;
+            case 1: 
+                document.write("segunda-feira")
+                break;
+            case 2:
+                document.write("Terça-feira")
+                break;
+            case 3: 
+                document.write("Quarta-feira")  
+                break;  
+            case 4: 
+                document.write("Quinta-feira")
+                break;
+            case 5:
+                document.write("Sexta-feira")
+                break;
+            case 6: 
+                document.write("Sabado")
+                break;
+            default: 
+                document.write("Valor Invalido")
+        }
+
+
+
+    </script>
+</body>
+</html>

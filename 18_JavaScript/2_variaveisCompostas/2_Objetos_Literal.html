@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //objeto literal - utilizando o formato JSON - JavaScript Object Notation
+        //criar objetos sem ter uma class como base
+        //criar um objeto sem ele ser a instancia de uma class
+        let u2 = {
+            "nacionalidade":"irlandesa",
+            "vocalista":"Bonno Vox",
+            "guitarrista":"The Edge",
+            "musicas":['New years day','i will follow','Sunday'],
+            "ingresso":true,
+            "preco":1000,
+            "valida":()=>{
+                alert("eu valido")
+            }
+        }
+
+        document.write(u2 +"<br>");
+        console.log(u2);
+        document.write(u2.vocalista +"<br>");
+        document.write(u2.preco +"<hr>");
+
+        console.log(u2.valida);
+        u2.valida();
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    font-family: Arial;
+    text-align: justify;
+}
+body{
+    background-color: grey;
+    background-image: url('../imagens/tra6.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+	height:200px;
+	background-color:black;
+	color:white;
+	line-height:200px;
+}
+section{
+    background-color: rgba(255,255,255,.7);
+    clear:both;
+    border-radius: 30px;
+    padding:30px;
+    margin: 20px auto;
+	font-size:20px;
+	width:80%;
+    position: relative;
+}
+h1{
+	font-size: 60px;
+    text-align: center;
+}
+h2{font-size: 30px;
+    text-align: center;
+    position:relative;
+    clear:both;
+    text-decoration: underline;
+    padding:30px;
+}
+nav{
+	position:fixed;
+	top:210px;
+	left:0;
+	z-index:10;
+}
+ol{
+    width: 200px;
+}
+
+li{
+    border-bottom: 1px solid black;
+    height:40px;
+	width:20px;
+	transition: width .5s;
+}
+li:hover{
+	width:100%;
+}
+li a{
+    height:100%;
+    display:block;
+    font-size: 14px;
+    text-decoration:none;
+    text-align:center;
+    line-height: 40px;
+	overflow:hidden;
+	padding-left:20px;
+	box-sizing:border-box;
+}
+a:link,a:visited{
+    background-color: white;
+    color:grey;
+    border-left:red 2px solid;
+}
+a:hover, a:active{
+    background-color: black;
+    color:white;
+    border-left:aqua 2px solid;
+}

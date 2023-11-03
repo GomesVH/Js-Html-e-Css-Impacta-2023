@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //planta de casa popular
+        //a class será a planta da casa
+        //modelo para criar uma ou mais variáveis
+        class Conta{
+            //propriedades
+            titular
+            cc
+            agencia
+            saldo
+
+            //função dentre de classe é chamado de metodo
+            //metodos
+            primeira(num1,num2){
+                return num1+num2;
+            }
+        } 
+
+        //tamara será um objeto(variável) criado a partir da class Conta 
+        //Tamara é uma instancia da class Conta
+        //new é o construtor de objetos
+        let tamara = new Conta;
+
+        console.log(tamara);
+        tamara.titular = "tamara";
+        tamara.agencia = '2167'
+        console.log(tamara);
+
+        let lourenzo = new Conta;
+
+        lourenzo.titular = "lourenzo";
+        lourenzo.agencia = '0440'
+        console.log(lourenzo);
+
+        //chamar a funcao primeira, retornara erro
+        //primeira(5,9)//1_class.html:45 Uncaught ReferenceError: primeira is not defined
+
+        //o metodo(função) primeira só será chamado por objetos(variáveis) criados a partir
+        //da class Conta
+        alert(tamara.primeira(9,5));
+        console.log(lourenzo.primeira(10,85));
+
+    </script>
+</body>
+</html>

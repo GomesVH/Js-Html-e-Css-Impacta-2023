@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   let alunos = '{"um":"Tamara","Dois":"Bruna","tres":"Andre","quatro":"Guilherme"}';
+   console.log(alunos);
+
+   let alunos2 = JSON.parse(alunos);
+   console.log(alunos2)
+
+   let alunos3 = JSON.stringify(alunos2);
+   console.log(alunos3)
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//observação
+   let num = 123.65
+  
+   /*
+   let x = new Math(num)
+   x.round()
+   não instancio a class Math 
+   */
+  document.write(Math.round(123.64))
+</script>
+<body>
+    
+</body>
+</html>

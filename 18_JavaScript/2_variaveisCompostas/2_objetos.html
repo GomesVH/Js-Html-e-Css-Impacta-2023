@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+     <script>
+       /*
+       Variavel objeto é uma variavel Composta
+       Variavel objeto é criada a partir de uma classe
+
+       Tem que existir primeiro a classe para poder existir o objeto
+
+       planta da casa => class
+       casa construida => object
+
+       casa é uma instancia da planta
+       object será uma instancia da class
+
+       Vou instanciar uma classe => vou criar um object a partir da class
+
+       new é o construtor de objetos
+       */
+
+       class Arquivos{
+            //propriedades - indices
+            nome 
+            tamanho
+
+            constructor(info1,info2){
+               //alert(info1+' Nasci!!!!');
+                this.nome=info1;//this aponta para o objeto
+                this.marca=info2;
+            }
+            //metodos
+            valida(){
+                alert("eu valido")
+            }
+       }
+    
+       //instancias da classe Arquivo
+       let produtos = new Arquivos("Anitta",'Tatuagem');
+       let clientes = new Arquivos("Pablo",'Timbre');
+
+        
+       produtos['tamanho']=15;//nao usual - sintaxe de array
+       clientes.tamanho=3;//padrao -> sintaxe de potos - dot sintax
+
+       //valida();
+       produtos.valida();
+       clientes.valida();
+
+       console.log(produtos);
+       console.log(clientes);
+    </script>
+</body>
+</html>

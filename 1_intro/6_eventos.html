@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do The Clash</title>
+
+
+</head>
+<body>
+    <input type="button" value="vai corinthians!" id="um" onclick="alert('oiii')">
+    <br><br>
+    <input type="button" value="vai corinthians!!" id="dois" ondblclick="primeira(2,3)">
+    <br><br>
+    <input type="button" value="vai corinthians!!!" id="tres">
+    <br><br>
+    <input type="button" value="vai corinthians!!!!" id="quatro">
+    <br><br>
+    <input type="button" value="vai corinthians!!!!!" id="cinco">
+    <script>
+        //responsabilidade unica
+        function primeira(num1,num2){
+            let res = num1 * num2
+            alert(res)
+        }
+        /* 
+        
+        */
+       window.document.getElementById('tres').onclick = primeira;
+
+       document.getElementById('quatro').onmouseout = function(){
+           primeira(25,4)
+       }
+       
+       document.getElementById('cinco').onmouseover = function(){
+           let numero =  prompt('Entre com um numero')
+           let answer = numero * 5
+           alert(answer) 
+       }
+
+    </script>
+   
+</body>
+</html>

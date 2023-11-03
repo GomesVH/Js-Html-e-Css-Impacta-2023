@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        let Promise2 = new Promise(function (resolve, reject) {
+            //codigo executor da "promessa"
+            setTimeout(() => {
+                //alternar entre resolve e reject
+                resolve('A promise 2 deu certo!!!')
+                //reject('A promise 2 deu errado')
+            }, 1500)
+        });
+        /*
+        Promise2.then(function (resultado) {
+            console.log("Resolvido: " + resultado);
+        })
+        Promise2.catch(function (resultado) {
+            console.log("Rejeitado: " + resultado);
+        });
+        */
+
+        //Promise2.then().catch()
+        Promise2.then(function (resultado) {
+            console.log("Resolvido: " + resultado);
+        }).catch(function (resultado) {
+            console.log("Rejeitado: " + resultado);
+        });
+
+    </script>
+</body>
+
+</html>
